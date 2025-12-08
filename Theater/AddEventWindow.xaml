@@ -17,6 +17,8 @@
         <TextBlock Text="Тип:" Margin="0,0,0,5"/>
         <ComboBox x:Name="TypeComboBox" Height="25" Margin="0,0,0,20">
             <ComboBoxItem Content="Спектакль" IsSelected="True"/>
+            <ComboBoxItem Content="Спектакль на стационаре"/>
+            <ComboBoxItem Content="Спектакль на выезде"/>
             <ComboBoxItem Content="Репетиция"/>
             <ComboBoxItem Content="Интермедия"/>
             <ComboBoxItem Content="Генеральная репетиция"/>

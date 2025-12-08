@@ -130,18 +130,28 @@ namespace Theater
         {
             var viewModel = DataContext as MainViewModel;
 
-            if (viewModel == null || viewModel.SelectedActor == null)
-            {
-                MessageBox.Show("Сначала выберите актёра, чтобы добавить событие.");
+            if (viewModel == null)
                 return;
-            }
 
             var dialog = new AddEventWindow();
             dialog.Owner = this;
 
             if (dialog.ShowDialog() == true && dialog.NewEvent != null)
             {
-                viewModel.SelectedActor.Events.Add(dialog.NewEvent);
+                var newEvent = dialog.NewEvent;
+
+                // Добавляем событие в глобальный список
+                viewModel.Events.Add(newEvent);
+
+                // Если выбран актёр, привязываем событие и к нему
+                if (viewModel.SelectedActor != null)
+                {
+                    if (viewModel.SelectedActor.Events == null)
+                        viewModel.SelectedActor.Events = new ObservableCollection<Event>();
+
+                    viewModel.SelectedActor.Events.Add(newEvent);
+                    viewModel.EventsView.Refresh();
+                }
             }
         }
 
@@ -194,7 +204,16 @@ namespace Theater
             {
                 if (DataContext is MainViewModel viewModel)
                 {
-                    viewModel.SelectedActor?.Events.Remove(theaterEvent);
+                    // Удаляем из глобального списка событий
+                    viewModel.Events.Remove(theaterEvent);
+
+                    // Удаляем событие у всех актёров, которые в нём участвуют
+                    foreach (var actor in viewModel.Actors)
+                    {
+                        actor.Events?.Remove(theaterEvent);
+                    }
+
+                    viewModel.EventsView.Refresh();
                 }
             }
         }
