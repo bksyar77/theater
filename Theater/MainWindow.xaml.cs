@@ -143,49 +143,47 @@ namespace Theater
                 // Добавляем событие в глобальный список
                 viewModel.Events.Add(newEvent);
 
-                // Если выбран актёр, привязываем событие и к нему
+                // Если выбран актёр — сразу создаём участие для него
                 if (viewModel.SelectedActor != null)
                 {
-                    if (viewModel.SelectedActor.Events == null)
-                        viewModel.SelectedActor.Events = new ObservableCollection<Event>();
+                    var actor = viewModel.SelectedActor;
 
-                    viewModel.SelectedActor.Events.Add(newEvent);
-                    viewModel.EventsView.Refresh();
+                    if (actor.Events == null)
+                        actor.Events = new ObservableCollection<Event>();
+
+                    if (!actor.Events.Contains(newEvent))
+                        actor.Events.Add(newEvent);
+
+                    var participation = new Participation
+                    {
+                        Actor = actor,
+                        Event = newEvent
+                    };
+
+                    newEvent.Participations.Add(participation);
+                    actor.Participations.Add(participation);
                 }
+
+                viewModel.EventsView.Refresh();
             }
         }
 
         // Метод для редактирования события
         private void EditEvent(Event theaterEvent)
         {
-            if (theaterEvent == null) return;
+            if (theaterEvent == null)
+                return;
 
-            var dialog = new AddEventWindow();
-            dialog.Owner = this;
-
-            // Заполняем поля текущими значениями
-            dialog.TitleTextBox.Text = theaterEvent.Title;
-            dialog.DatePicker.SelectedDate = theaterEvent.Date;
-            dialog.TimeTextBox.Text = theaterEvent.Date.ToString("HH:mm");
-
-            // Устанавливаем тип
-            foreach (ComboBoxItem item in dialog.TypeComboBox.Items)
+            if (DataContext is MainViewModel viewModel)
             {
-                if (item.Content?.ToString() == theaterEvent.Type)
+                var dialog = new EditEventWindow(theaterEvent, viewModel.Actors);
+                dialog.Owner = this;
+
+                if (dialog.ShowDialog() == true)
                 {
-                    dialog.TypeComboBox.SelectedItem = item;
-                    break;
+                    // Объект theaterEvent уже обновлён окном
+                    viewModel.EventsView.Refresh();
                 }
-            }
-
-            dialog.Title = "Редактировать событие";
-
-            if (dialog.ShowDialog() == true && dialog.NewEvent != null)
-            {
-                // Обновляем данные события
-                theaterEvent.Title = dialog.NewEvent.Title;
-                theaterEvent.Date = dialog.NewEvent.Date;
-                theaterEvent.Type = dialog.NewEvent.Type;
             }
         }
 
@@ -207,9 +205,21 @@ namespace Theater
                     // Удаляем из глобального списка событий
                     viewModel.Events.Remove(theaterEvent);
 
-                    // Удаляем событие у всех актёров, которые в нём участвуют
+                    // Удаляем участие и событие у всех актёров
                     foreach (var actor in viewModel.Actors)
                     {
+                        // Удаляем Participation
+                        var participationsToRemove = actor.Participations
+                            .Where(p => p.Event == theaterEvent)
+                            .ToList();
+
+                        foreach (var p in participationsToRemove)
+                        {
+                            actor.Participations.Remove(p);
+                            theaterEvent.Participations.Remove(p);
+                        }
+
+                        // Удаляем событие из списка событий актёра
                         actor.Events?.Remove(theaterEvent);
                     }
 
@@ -269,7 +279,7 @@ namespace Theater
                     string json = JsonSerializer.Serialize(viewModel.Actors, options);
                     File.WriteAllText(dialog.FileName, json);
 
-                    MessageBox.Show("Данные успешно сохранены!", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("Данные успешно сохранены", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 catch (Exception ex)
                 {
@@ -304,7 +314,38 @@ namespace Theater
                         foreach (var actor in loadedActors)
                             viewModel.Actors.Add(actor);
 
-                        MessageBox.Show("Данные успешно загружены!", "Загрузка", MessageBoxButton.OK, MessageBoxImage.Information);
+                        // Перестраиваем глобальный список событий и участия
+                        viewModel.Events.Clear();
+
+                        foreach (var actor in viewModel.Actors)
+                        {
+                            if (actor.Events != null)
+                            {
+                                foreach (var ev in actor.Events)
+                                {
+                                    if (!viewModel.Events.Contains(ev))
+                                    {
+                                        viewModel.Events.Add(ev);
+                                    }
+
+                                    // Гарантируем наличие Participation для связки актёр-событие
+                                    if (!actor.Participations.Any(p => p.Event == ev))
+                                    {
+                                        var participation = new Participation
+                                        {
+                                            Actor = actor,
+                                            Event = ev
+                                        };
+                                        actor.Participations.Add(participation);
+                                        ev.Participations.Add(participation);
+                                    }
+                                }
+                            }
+                        }
+
+                        viewModel.EventsView.Refresh();
+
+                        MessageBox.Show("Данные успешно загружены", "Загрузка", MessageBoxButton.OK, MessageBoxImage.Information);
                     }
                 }
                 catch (Exception ex)
@@ -313,6 +354,6 @@ namespace Theater
                 }
             }
         }
+
     }
 }
-

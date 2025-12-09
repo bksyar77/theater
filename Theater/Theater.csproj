@@ -7,7 +7,7 @@
     <ProjectGuid>{DC0D14FD-A200-4172-B1CD-727D77922DC2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Theater</RootNamespace>
-    <AssemblyName>Theater1.3</AssemblyName>
+    <AssemblyName>Theater</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -92,6 +92,12 @@
     <Compile Include="AddEventWindow.xaml.cs">
       <DependentUpon>AddEventWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EditEventWindow.xaml.cs">
+      <DependentUpon>EditEventWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectParticipantsWindow.xaml.cs">
+      <DependentUpon>SelectParticipantsWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\RelayCommand.cs" />
     <Page Include="AddActorWindow.xaml">
@@ -99,6 +105,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddEventWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EditEventWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectParticipantsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

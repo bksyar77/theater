@@ -1,4 +1,4 @@
-﻿Theater
+﻿Theater1.4
 
 
 winexe
@@ -16,5 +16,5 @@ C:\Users\Admin\Desktop\Theater\Theater\App.xaml
 24556572168
 AddActorWindow.xaml;AddEventWindow.xaml;EditEventWindow.xaml;SelectParticipantsWindow.xaml;MainWindow.xaml;
 
-False
+True
 

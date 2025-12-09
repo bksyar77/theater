@@ -41,11 +41,21 @@ namespace Theater
             var typeItem = TypeComboBox.SelectedItem as ComboBoxItem;
             string type = typeItem?.Content?.ToString() ?? "Спектакль";
 
+            double hours = 0;
+            if (!double.TryParse(HoursTextBox.Text.Replace(",", "."),
+                                 System.Globalization.NumberStyles.Any,
+                                 System.Globalization.CultureInfo.InvariantCulture,
+                                 out hours))
+            {
+                hours = 0;
+            }
+
             NewEvent = new Event
             {
                 Title = TitleTextBox.Text.Trim(),
                 Date = fullDate,
-                Type = type
+                Type = type,
+                Hours = hours
             };
 
             DialogResult = true;
