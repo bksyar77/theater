@@ -121,6 +121,16 @@ namespace Theater
                 DeleteActor(selectedActor);
             }
         }
+
+        private void ActorStatsContextMenu_Click(object sender, RoutedEventArgs e)
+        {
+            if (ActorsDataGrid.SelectedItem is Actor selectedActor)
+            {
+                var statsWindow = new ActorStatsWindow(selectedActor);
+                statsWindow.Owner = this;
+                statsWindow.ShowDialog();
+            }
+        }
         private void AddEventTable(object sender, RoutedEventArgs e)
         {
             AddEvent();
@@ -353,6 +363,16 @@ namespace Theater
                     MessageBox.Show($"Ошибка при загрузке данных: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
+        }
+        private void ExportGlobalStats_Click(object sender, RoutedEventArgs e)
+        {
+            var viewModel = DataContext as MainViewModel;
+
+            if (viewModel == null)
+                return;
+            var win = new ExportPeriodWindow(viewModel);
+            win.Owner = this;
+            win.ShowDialog();
         }
 
     }

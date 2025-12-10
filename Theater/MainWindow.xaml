@@ -41,7 +41,11 @@
                 <DockPanel>
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,6">
                         <Button Content="Добавить" Command="{Binding AddActorCommand}" Width="90" Margin="0,0,6,0" Click="AddActorTable"/>
-                        <Button Content="Удалить" Command="{Binding SaveDataCommand}" Width="90" Margin="0,0,6,0"/>
+                        <Button Content="Экспорт статистики (Word)"
+Margin="10,0,0,0"
+Width="200"
+Click="ExportGlobalStats_Click"/>
+
                     </StackPanel>
 
                     <DataGrid x:Name="ActorsDataGrid"
@@ -54,7 +58,7 @@
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="Имя" Binding="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="*" />
                             <DataGridTextColumn Header="Роль" Binding="{Binding Role, UpdateSourceTrigger=PropertyChanged}" Width="150" />
-                            <DataGridTextColumn Header="Баланс" Binding="{Binding Balance, StringFormat=N2}" Width="110" />
+                            <DataGridTextColumn Header="Часы" Binding="{Binding Balance, StringFormat=N2}" Width="110" />
                             <DataGridTextColumn Header="Участий" Binding="{Binding Participations.Count}" IsReadOnly="True" Width="80" />
                         </DataGrid.Columns>
 
@@ -62,6 +66,7 @@
                             <ContextMenu>
                                 <MenuItem Header="Редактировать актёра..." Click="EditActorContextMenu_Click"/>
                                 <MenuItem Header="Удалить актёра" Click="DeleteActorContextMenu_Click"/>
+                                <MenuItem Header="Статистика актёра..." Click="ActorStatsContextMenu_Click"/>
                             </ContextMenu>
                         </DataGrid.ContextMenu>
                     </DataGrid>
@@ -74,6 +79,10 @@
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,6">
                         <Button Content="Добавить" Width="90" Margin="0,0,6,0" Click="AddEventTable"/>
                         <Button Content="Удалить" Width="90" Margin="0,0,6,0"/>
+                        <CheckBox Content="Фильтр по актёру"
+                                  Margin="10,0,0,0"
+                                  VerticalAlignment="Center"
+                                  IsChecked="{Binding FilterByActor}"/>
                     </StackPanel>
 
                     <DataGrid x:Name="EventsDataGrid"

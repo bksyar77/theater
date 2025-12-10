@@ -91,7 +91,7 @@ namespace Theater {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Theater1.4;component/addeventwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Theater1.5;component/addeventwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\AddEventWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -30,10 +30,26 @@ namespace Theater.ViewModel
         {
             if (obj is Event ev)
             {
-                if (SelectedActor == null) return true;
+                // Если фильтр по актёру отключен или актёр не выбран — показываем все события
+                if (!FilterByActor || SelectedActor == null)
+                    return true;
+
                 return SelectedActor.Events != null && SelectedActor.Events.Contains(ev);
             }
             return false;
+        }
+
+        private bool _filterByActor = true;
+
+        public bool FilterByActor
+        {
+            get => _filterByActor;
+            set
+            {
+                _filterByActor = value;
+                OnPropertyChanged();
+                EventsView?.Refresh();
+            }
         }
 
         private Actor _selectedActor;

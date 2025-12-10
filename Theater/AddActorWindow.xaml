@@ -11,7 +11,7 @@
         <TextBlock Text="Роль:" Margin="0,0,0,5"/>
         <TextBox x:Name="RoleTextBox" Height="25" Margin="0,0,0,10"/>
 
-        <TextBlock Text="Баланс:" Margin="0,0,0,5"/>
+        <TextBlock Text="Часы:" Margin="0,0,0,5"/>
         <TextBox x:Name="BalanceTextBox" Height="25" Margin="0,0,0,20" Text="0"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">

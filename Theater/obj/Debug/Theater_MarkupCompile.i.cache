@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\Desktop\Theater\Theater\obj\Debug\
+C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\
 Theater
 none
 false
 DEBUG;TRACE
-C:\Users\Admin\Desktop\Theater\Theater\App.xaml
-5-777747392
+C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\App.xaml
+7-195695143
 
-151252318222
-24556572168
-AddActorWindow.xaml;AddEventWindow.xaml;EditEventWindow.xaml;SelectParticipantsWindow.xaml;MainWindow.xaml;
+171052344553
+262059220516
+AddActorWindow.xaml;AddEventWindow.xaml;EditEventWindow.xaml;ExportPeriodWindow.xaml;SelectParticipantsWindow.xaml;ActorStatsWindow.xaml;MainWindow.xaml;
 
 False
 
