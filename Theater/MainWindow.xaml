@@ -15,9 +15,6 @@
         <Menu DockPanel.Dock="Top" IsMainMenu="True">
             <MenuItem Header="Save" Command="{Binding SaveDataCommand}" Click="SaveData_Click" />
             <MenuItem Header="Load" Command="{Binding LoadDataCommand}" Click="LoadData_Click"/>
-            <MenuItem Header="Export Excel" Command="{Binding ExportExcelCommand}" />
-            <MenuItem Header="Export Word" Command="{Binding ExportWordCommand}" />
-            <MenuItem Header="Exit" Command="{x:Static ApplicationCommands.Close}" />
         </Menu>
 
         <!-- Toolbar -->
@@ -42,9 +39,9 @@
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,6">
                         <Button Content="Добавить" Command="{Binding AddActorCommand}" Width="90" Margin="0,0,6,0" Click="AddActorTable"/>
                         <Button Content="Экспорт статистики (Word)"
-Margin="10,0,0,0"
-Width="200"
-Click="ExportGlobalStats_Click"/>
+        Margin="10,0,0,0"
+        Width="200"
+        Click="ExportGlobalStats_Click"/>
 
                     </StackPanel>
 
@@ -78,7 +75,6 @@ Click="ExportGlobalStats_Click"/>
                 <DockPanel>
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,6">
                         <Button Content="Добавить" Width="90" Margin="0,0,6,0" Click="AddEventTable"/>
-                        <Button Content="Удалить" Width="90" Margin="0,0,6,0"/>
                         <CheckBox Content="Фильтр по актёру"
                                   Margin="10,0,0,0"
                                   VerticalAlignment="Center"

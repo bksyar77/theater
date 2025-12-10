@@ -100,7 +100,7 @@ namespace Theater.Models
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string name)
+        protected void OnPropertyChanged(string name)  
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }

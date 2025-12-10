@@ -18,6 +18,13 @@ using System.IO;
 using System.Text.Json;
 using Theater.Models;
 using Theater.ViewModel;
+using System.Text.Json.Serialization;
+using DocumentFormat.OpenXml;
+using DocumentFormat.OpenXml.Packaging;
+using DocumentFormat.OpenXml.Wordprocessing;
+using Word = DocumentFormat.OpenXml.Wordprocessing; // <--- ВАЖНО
+
+
 
 namespace Theater
 {
@@ -285,9 +292,15 @@ namespace Theater
             {
                 try
                 {
-                    var options = new JsonSerializerOptions { WriteIndented = true };
+                    var options = new JsonSerializerOptions
+                    {
+                        WriteIndented = true,
+                        ReferenceHandler = ReferenceHandler.Preserve
+                    };
+
                     string json = JsonSerializer.Serialize(viewModel.Actors, options);
                     File.WriteAllText(dialog.FileName, json);
+
 
                     MessageBox.Show("Данные успешно сохранены", "Сохранение", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
@@ -315,8 +328,14 @@ namespace Theater
             {
                 try
                 {
+                    var options = new JsonSerializerOptions
+                    {
+                        ReferenceHandler = ReferenceHandler.Preserve
+                    };
+
                     string json = File.ReadAllText(dialog.FileName);
-                    var loadedActors = JsonSerializer.Deserialize<ObservableCollection<Actor>>(json);
+                    var loadedActors = JsonSerializer.Deserialize<ObservableCollection<Actor>>(json, options);
+
 
                     if (loadedActors != null)
                     {
@@ -367,13 +386,118 @@ namespace Theater
         private void ExportGlobalStats_Click(object sender, RoutedEventArgs e)
         {
             var viewModel = DataContext as MainViewModel;
-
             if (viewModel == null)
                 return;
             var win = new ExportPeriodWindow(viewModel);
             win.Owner = this;
             win.ShowDialog();
         }
+
+        private void ExportActorsTableToWord(string filename)
+        {
+            var viewModel = DataContext as MainViewModel;
+            if (viewModel == null)
+                return;
+            var win = new ExportPeriodWindow(viewModel);
+            win.Owner = this;
+            win.ShowDialog();
+            using (var word = WordprocessingDocument.Create(filename, WordprocessingDocumentType.Document))
+            {
+                var mainPart = word.AddMainDocumentPart();
+                mainPart.Document = new Word.Document();
+                var body = new Word.Body();
+
+                // Заголовок документа
+                var headingRun = new Word.Run(new Word.Text("Общая статистика всех актёров"));
+                var headingParagraph = new Word.Paragraph(headingRun)
+                {
+                    ParagraphProperties = new Word.ParagraphProperties(
+                        new Word.Justification { Val = Word.JustificationValues.Center })
+                };
+
+                body.Append(headingParagraph);
+                body.Append(new Word.Paragraph(new Word.Run(new Word.Text("")))); // пустая строка
+
+                // Список всех типов событий
+                var eventTypes = viewModel.Events
+                    .Select(ev => ev.Type ?? "Без типа")
+                    .Distinct()
+                    .OrderBy(t => t)
+                    .ToList();
+
+                // Таблица
+                var table = new Word.Table();
+
+                var tblProps = new Word.TableProperties(
+                    new Word.TableBorders(
+                        new Word.TopBorder { Val = Word.BorderValues.Single, Size = 4 },
+                        new Word.BottomBorder { Val = Word.BorderValues.Single, Size = 4 },
+                        new Word.LeftBorder { Val = Word.BorderValues.Single, Size = 4 },
+                        new Word.RightBorder { Val = Word.BorderValues.Single, Size = 4 },
+                        new Word.InsideHorizontalBorder { Val = Word.BorderValues.Single, Size = 4 },
+                        new Word.InsideVerticalBorder { Val = Word.BorderValues.Single, Size = 4 }
+                    )
+                );
+                table.AppendChild(tblProps);
+
+                // Заголовочная строка: первая колонка "Актёр", далее — типы событий
+                var headerRow = new Word.TableRow();
+                headerRow.Append(MakeWordCell("Актёр", bold: true));
+                foreach (var type in eventTypes)
+                {
+                    headerRow.Append(MakeWordCell(type, bold: true));
+                }
+                table.Append(headerRow);
+
+                // Строки: актёры
+                foreach (var actor in viewModel.Actors)
+                {
+                    var row = new Word.TableRow();
+
+                    // Имя актёра
+                    row.Append(MakeWordCell(actor.Name));
+
+                    // По каждому типу события — часы и участия
+                    foreach (var type in eventTypes)
+                    {
+                        var participations = actor.Participations
+                            .Where(p => p.Event != null && (p.Event.Type ?? "Без типа") == type)
+                            .ToList();
+
+                        int count = participations.Count;
+                        double hours = participations.Sum(p => p.Hours);
+
+                        string cellText = $"{hours:N2} ч ({count} уч.)";
+
+                        row.Append(MakeWordCell(cellText));
+                    }
+
+                    table.Append(row);
+                }
+
+                body.Append(table);
+                mainPart.Document.Append(body);
+                mainPart.Document.Save();
+            }
+        }
+        private Word.TableCell MakeWordCell(string text, bool bold = false)
+        {
+            var run = new Word.Run();
+
+            if (bold)
+            {
+                var runProps = new Word.RunProperties(new Word.Bold());
+                run.Append(runProps);
+            }
+
+            run.Append(new Word.Text(text ?? string.Empty));
+
+            var paragraph = new Word.Paragraph(run);
+            var cell = new Word.TableCell(paragraph);
+            return cell;
+        }
+
+
 
     }
 }

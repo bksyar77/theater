@@ -1,52 +1,104 @@
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.exe.config
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.exe
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.pdb
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Buffers.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.IO.Pipelines.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Memory.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Json.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.ValueTuple.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Buffers.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.IO.Pipelines.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Memory.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Encodings.Web.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Json.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.ValueTuple.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.AssemblyReference.cache
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddActorWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddEventWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\EditEventWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\SelectParticipantsWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ActorStatsWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddActorWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddEventWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\EditEventWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\SelectParticipantsWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ActorStatsWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\MainWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\App.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.cache
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.lref
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\MainWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.g.resources
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater.Properties.Resources.resources
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.GenerateResource.cache
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.Up2Date
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.exe
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.pdb
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ExportPeriodWindow.baml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ExportPeriodWindow.g.cs
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.dll
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.xml
-C:\Users\Admin\Downloads\Telegram Desktop\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.exe.config
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.exe
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Theater1.5.pdb
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Buffers.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.IO.Pipelines.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Memory.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Json.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.ValueTuple.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Buffers.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.IO.Pipelines.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Memory.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Text.Json.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\System.ValueTuple.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.AssemblyReference.cache
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddActorWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddEventWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\EditEventWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\SelectParticipantsWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ActorStatsWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddActorWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\AddEventWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\EditEventWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\SelectParticipantsWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ActorStatsWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\MainWindow.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\App.g.cs
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.cache
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.lref
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\MainWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.g.resources
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater.Properties.Resources.resources
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.GenerateResource.cache
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.CoreCompileInputs.cache
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.csproj.Up2Date
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.exe
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\Theater1.5.pdb
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ExportPeriodWindow.baml
+C:\Users\BKS\Downloads\Theater1.5_with_hours_and_stats\Theater\Theater\obj\Debug\ExportPeriodWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\Theater1.5.exe.config
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\Theater1.5.exe
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\Theater1.5.pdb
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Buffers.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.IO.Pipelines.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Memory.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Text.Json.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.ValueTuple.dll
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\DocumentFormat.OpenXml.Framework.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Buffers.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.IO.Pipelines.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Memory.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Text.Json.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\bin\Debug\System.ValueTuple.xml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.csproj.AssemblyReference.cache
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\AddActorWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\AddEventWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\EditEventWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\ExportPeriodWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\SelectParticipantsWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\ActorStatsWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\AddActorWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\AddEventWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\EditEventWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\ExportPeriodWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\SelectParticipantsWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\ActorStatsWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\MainWindow.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\App.g.cs
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.cache
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5_MarkupCompile.lref
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\MainWindow.baml
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.g.resources
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater.Properties.Resources.resources
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.csproj.GenerateResource.cache
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.csproj.CoreCompileInputs.cache
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.csproj.Up2Date
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.exe
+C:\Users\BKS\Downloads\Theater_fixed_word\Theater\Theater\obj\Debug\Theater1.5.pdb

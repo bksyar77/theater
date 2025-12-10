@@ -1,0 +1,237 @@
+{
+  "$id": "1",
+  "$values": [
+    {
+      "$id": "2",
+      "Id": 0,
+      "Name": "\u0411\u0430\u0440\u0430\u043D\u043E\u0432 \u041A\u043E\u043D\u0441\u0442\u0430\u043D\u0442\u0438\u043D",
+      "Role": "\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A",
+      "Balance": 0,
+      "Events": {
+        "$id": "3",
+        "$values": []
+      },
+      "Participations": {
+        "$id": "4",
+        "$values": []
+      }
+    },
+    {
+      "$id": "5",
+      "Id": 0,
+      "Name": "\u0432\u0444\u044B\u0432\u0444\u044B",
+      "Role": "\u0432\u0444\u044B\u0432\u0444\u044B",
+      "Balance": 12,
+      "Events": {
+        "$id": "6",
+        "$values": [
+          {
+            "$id": "7",
+            "Id": 0,
+            "Title": "\u0432\u0444\u044B\u0432\u044B\u0444",
+            "Date": "2025-11-12T19:00:00",
+            "Type": "\u0421\u043F\u0435\u043A\u0442\u0430\u043A\u043B\u044C",
+            "Hours": 2,
+            "Participations": {
+              "$id": "8",
+              "$values": [
+                {
+                  "$id": "9",
+                  "Id": 0,
+                  "Actor": {
+                    "$ref": "5"
+                  },
+                  "Event": {
+                    "$ref": "7"
+                  },
+                  "Hours": 2,
+                  "OverrideHours": false
+                }
+              ]
+            }
+          },
+          {
+            "$id": "10",
+            "Id": 0,
+            "Title": "\u0432\u044B\u044B",
+            "Date": "2025-11-01T19:00:00",
+            "Type": "\u0421\u043F\u0435\u043A\u0442\u0430\u043A\u043B\u044C \u043D\u0430 \u0432\u044B\u0435\u0437\u0434\u0435",
+            "Hours": 1,
+            "Participations": {
+              "$id": "11",
+              "$values": [
+                {
+                  "$id": "12",
+                  "Id": 0,
+                  "Actor": {
+                    "$ref": "5"
+                  },
+                  "Event": {
+                    "$ref": "10"
+                  },
+                  "Hours": 1,
+                  "OverrideHours": false
+                }
+              ]
+            }
+          },
+          {
+            "$id": "13",
+            "Id": 0,
+            "Title": "\u043D\u0433\u0449\u0448",
+            "Date": "2025-10-31T19:00:00",
+            "Type": "\u0421\u043F\u0435\u043A\u0442\u0430\u043A\u043B\u044C",
+            "Hours": 2,
+            "Participations": {
+              "$id": "14",
+              "$values": [
+                {
+                  "$id": "15",
+                  "Id": 0,
+                  "Actor": {
+                    "$ref": "5"
+                  },
+                  "Event": {
+                    "$ref": "13"
+                  },
+                  "Hours": 2,
+                  "OverrideHours": false
+                }
+              ]
+            }
+          },
+          {
+            "$id": "16",
+            "Id": 0,
+            "Title": "\u0421\u0438\u043D\u0438\u0439 \u0442\u0440\u0430\u043A\u0442\u043E\u0440",
+            "Date": "2025-11-21T19:00:00",
+            "Type": "\u0421\u043F\u0435\u043A\u0442\u0430\u043A\u043B\u044C \u043D\u0430 \u0441\u0442\u0430\u0446\u0438\u043E\u043D\u0430\u0440\u0435",
+            "Hours": 2,
+            "Participations": {
+              "$id": "17",
+              "$values": [
+                {
+                  "$id": "18",
+                  "Id": 0,
+                  "Actor": {
+                    "$ref": "5"
+                  },
+                  "Event": {
+                    "$ref": "16"
+                  },
+                  "Hours": 2,
+                  "OverrideHours": false
+                }
+              ]
+            }
+          },
+          {
+            "$id": "19",
+            "Id": 0,
+            "Title": "\u0427\u0435\u043F\u0443\u0445\u0430",
+            "Date": "2025-11-20T19:00:00",
+            "Type": "\u0418\u043D\u0442\u0435\u0440\u043C\u0435\u0434\u0438\u044F",
+            "Hours": 5,
+            "Participations": {
+              "$id": "20",
+              "$values": [
+                {
+                  "$id": "21",
+                  "Id": 0,
+                  "Actor": {
+                    "$ref": "5"
+                  },
+                  "Event": {
+                    "$ref": "19"
+                  },
+                  "Hours": 5,
+                  "OverrideHours": false
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "Participations": {
+        "$id": "22",
+        "$values": [
+          {
+            "$ref": "9"
+          },
+          {
+            "$ref": "12"
+          },
+          {
+            "$ref": "15"
+          },
+          {
+            "$ref": "18"
+          },
+          {
+            "$ref": "21"
+          }
+        ]
+      }
+    },
+    {
+      "$id": "23",
+      "Id": 0,
+      "Name": "\u0410\u0431\u0434\u0443\u043B",
+      "Role": "\u0410\u043A\u0442\u0435\u0440",
+      "Balance": 0,
+      "Events": {
+        "$id": "24",
+        "$values": []
+      },
+      "Participations": {
+        "$id": "25",
+        "$values": []
+      }
+    },
+    {
+      "$id": "26",
+      "Id": 0,
+      "Name": "\u0410\u0445\u043C\u0435\u0434",
+      "Role": "\u0410\u043A\u0442\u0435\u0440",
+      "Balance": 0,
+      "Events": {
+        "$id": "27",
+        "$values": []
+      },
+      "Participations": {
+        "$id": "28",
+        "$values": []
+      }
+    },
+    {
+      "$id": "29",
+      "Id": 0,
+      "Name": "\u0427\u0443\u0448\u043F\u0430\u043D",
+      "Role": "\u0410\u043A\u0442\u0435\u0440",
+      "Balance": 0,
+      "Events": {
+        "$id": "30",
+        "$values": []
+      },
+      "Participations": {
+        "$id": "31",
+        "$values": []
+      }
+    },
+    {
+      "$id": "32",
+      "Id": 0,
+      "Name": "\u041C\u0430\u043A\u0441\u0438\u043A",
+      "Role": "\u0413\u0435\u0439",
+      "Balance": 0,
+      "Events": {
+        "$id": "33",
+        "$values": []
+      },
+      "Participations": {
+        "$id": "34",
+        "$values": []
+      }
+    }
+  ]
+}
