@@ -67,7 +67,7 @@ namespace Theater {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Theater1.5;component/exportperiodwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Theater;component/exportperiodwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\ExportPeriodWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

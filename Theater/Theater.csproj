@@ -104,6 +104,7 @@
     <Compile Include="ExportPeriodWindow.xaml.cs">
       <DependentUpon>ExportPeriodWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ISave.cs" />
     <Compile Include="SelectParticipantsWindow.xaml.cs">
       <DependentUpon>SelectParticipantsWindow.xaml</DependentUpon>
     </Compile>
@@ -178,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

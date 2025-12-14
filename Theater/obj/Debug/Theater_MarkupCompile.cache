@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Admin\source\repos\Theater\Theater\obj\Debug\
+C:\Users\Admin\Desktop\Theater\Theater\obj\Debug\
 Theater
 none
 false
 DEBUG;TRACE
-C:\Users\Admin\source\repos\Theater\Theater\App.xaml
-3995596322
+C:\Users\Admin\Desktop\Theater\Theater\App.xaml
+7-195695143
 
-11-398702468
-24424432036
-AddActorWindow.xaml;AddEventWindow.xaml;MainWindow.xaml;
+17801002748
+26291407708
+AddActorWindow.xaml;AddEventWindow.xaml;EditEventWindow.xaml;ExportPeriodWindow.xaml;SelectParticipantsWindow.xaml;ActorStatsWindow.xaml;MainWindow.xaml;
 
 False
 

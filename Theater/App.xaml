@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:Theater"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Image x:Key="AppIcon" Source="icon.PNG" />
     </Application.Resources>
 </Application>

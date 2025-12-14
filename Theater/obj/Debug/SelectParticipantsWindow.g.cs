@@ -59,7 +59,7 @@ namespace Theater {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Theater1.5;component/selectparticipantswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Theater;component/selectparticipantswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\SelectParticipantsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

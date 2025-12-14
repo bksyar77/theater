@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Theater\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:2:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|c:\\users\\admin\\desktop\\theater\\theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|solutionrelative:theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\addeventwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\addeventwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|c:\\users\\admin\\desktop\\theater\\theater\\exportperiodwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\exportperiodwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\exportperiodwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
@@ -20,10 +28,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Theater||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|c:\\users\\admin\\desktop\\theater\\theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|solutionrelative:theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,10 +86,6 @@
       "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
@@ -104,9 +104,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|C:\\Users\\Admin\\Desktop\\Theater\\theater\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater.csproj|solutionrelative:theater\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DC0D14FD-A200-4172-B1CD-727D77922DC2}|Theater\\Theater1.5.csproj|c:\\users\\admin\\desktop\\theater\\theater\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -116,35 +113,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExportPeriodWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml",
-              "RelativeDocumentMoniker": "Theater\\ExportPeriodWindow.xaml",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml",
-              "RelativeToolTip": "Theater\\ExportPeriodWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-10T17:46:47.102Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Theater",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Theater.csproj",
-              "RelativeDocumentMoniker": "Theater\\Theater.csproj",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Theater.csproj",
-              "RelativeToolTip": "Theater\\Theater.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-10T17:46:29.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Theater\\ViewModel\\MainViewModel.cs",
@@ -152,12 +129,11 @@
               "RelativeToolTip": "Theater\\ViewModel\\MainViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T16:16:04.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T16:16:04.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Actor.cs",
               "RelativeDocumentMoniker": "Theater\\Models\\Actor.cs",
@@ -165,12 +141,11 @@
               "RelativeToolTip": "Theater\\Models\\Actor.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T13:55:29.679Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T13:55:29.679Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Theater\\ViewModel\\MainViewModel.cs",
@@ -178,12 +153,11 @@
               "RelativeToolTip": "Theater\\ViewModel\\MainViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:41:03.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:41:03.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Participation.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Participation.cs",
               "RelativeDocumentMoniker": "Theater\\Models\\Participation.cs",
@@ -195,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ExportPeriodWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\ExportPeriodWindow.xaml",
@@ -206,31 +180,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\MainWindow.xaml",
               "RelativeToolTip": "Theater\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-16T14:25:38.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T14:25:38.324Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AddEventWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddEventWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\AddEventWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddEventWindow.xaml",
               "RelativeToolTip": "Theater\\AddEventWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-10T21:29:21.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T21:29:21.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AddEventWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddEventWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\AddEventWindow.xaml.cs",
@@ -238,12 +210,11 @@
               "RelativeToolTip": "Theater\\AddEventWindow.xaml.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAwwAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T21:29:53.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T21:29:53.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Event.cs",
               "RelativeDocumentMoniker": "Theater\\Models\\Event.cs",
@@ -255,6 +226,30 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Actor.cs",
+              "RelativeDocumentMoniker": "Theater\\Models\\Actor.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Actor.cs",
+              "RelativeToolTip": "Theater\\Models\\Actor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T23:39:13.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Theater",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Theater.csproj",
+              "RelativeDocumentMoniker": "Theater\\Theater.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Theater.csproj",
+              "RelativeToolTip": "Theater\\Theater.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-10T17:46:29.575Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
               "Title": "AddActorWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddActorWindow.xaml.cs",
@@ -263,8 +258,7 @@
               "RelativeToolTip": "Theater\\AddActorWindow.xaml.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAawCIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T00:05:50.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T00:05:50.329Z"
             },
             {
               "$type": "Document",
@@ -275,8 +269,7 @@
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddActorWindow.xaml",
               "RelativeToolTip": "Theater\\AddActorWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-10T00:05:09.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T00:05:09.738Z"
             },
             {
               "$type": "Document",
@@ -288,8 +281,18 @@
               "RelativeToolTip": "Theater\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-09T23:50:30.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:50:30.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExportPeriodWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml",
+              "RelativeDocumentMoniker": "Theater\\ExportPeriodWindow.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml",
+              "RelativeToolTip": "Theater\\ExportPeriodWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-10T17:46:47.102Z"
             },
             {
               "$type": "Document",
@@ -301,8 +304,7 @@
               "RelativeToolTip": "Theater\\ViewModel\\RelayCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:41:32.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:41:32.151Z"
             },
             {
               "$type": "Document",
@@ -313,12 +315,11 @@
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\App.xaml",
               "RelativeToolTip": "Theater\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-10T00:18:35.204Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T00:18:35.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\MainWindow.xaml.cs",
@@ -330,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "AddEventWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\AddEventWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\AddEventWindow.xaml.cs",
@@ -342,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "ExportPeriodWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ExportPeriodWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\ExportPeriodWindow.xaml.cs",
@@ -354,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ActorStatsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ActorStatsWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\ActorStatsWindow.xaml",
@@ -365,7 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ActorStatsWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\ActorStatsWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\ActorStatsWindow.xaml.cs",
@@ -377,7 +378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "SelectParticipantsWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\SelectParticipantsWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\SelectParticipantsWindow.xaml",
@@ -388,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "EditEventWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\EditEventWindow.xaml.cs",
               "RelativeDocumentMoniker": "Theater\\EditEventWindow.xaml.cs",
@@ -400,32 +401,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Actor.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Actor.cs",
-              "RelativeDocumentMoniker": "Theater\\Models\\Actor.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Actor.cs",
-              "RelativeToolTip": "Theater\\Models\\Actor.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:39:13.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Theater\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\MainWindow.xaml",
               "RelativeToolTip": "Theater\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-09T23:38:07.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:38:07.572Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Event.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Theater\\Theater\\Models\\Event.cs",
               "RelativeDocumentMoniker": "Theater\\Models\\Event.cs",
@@ -433,8 +420,7 @@
               "RelativeToolTip": "Theater\\Models\\Event.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T23:39:20.077Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T23:39:20.077Z"
             }
           ]
         }

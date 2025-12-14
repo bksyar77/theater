@@ -1,16 +1,14 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Windows;
-using DocumentFormat.OpenXml;
-using DocumentFormat.OpenXml.Packaging;
 using Theater.ViewModel;
-using Word = DocumentFormat.OpenXml.Wordprocessing;
 
 namespace Theater
 {
     public partial class ExportPeriodWindow : Window
     {
         private readonly MainViewModel _vm;
+        private readonly ISave _saveService = new WordSaveService();
 
         public ExportPeriodWindow(MainViewModel vm)
         {
@@ -25,8 +23,7 @@ namespace Theater
 
         private void Export_Click(object sender, RoutedEventArgs e)
         {
-            if (StartDatePicker.SelectedDate == null ||
-                EndDatePicker.SelectedDate == null)
+            if (StartDatePicker.SelectedDate == null || EndDatePicker.SelectedDate == null)
             {
                 MessageBox.Show("Выберите обе даты.");
                 return;
@@ -47,129 +44,58 @@ namespace Theater
             if (dialog.ShowDialog() != true)
                 return;
 
-            ExportStats(dialog.FileName);
+            var table = BuildTable();
+            _saveService.Save(dialog.FileName, table);
+
             MessageBox.Show("Файл успешно сохранён!");
             Close();
         }
 
-        private bool IsParticipation(string type) =>
-            type == "Спектакль" ||
-            type == "Спектакль на выезде" ||
-            type == "Спектакль на стационаре";
-
-        private Word.TableCell Cell(string text)
-        {
-            var p = new Word.Paragraph(new Word.Run(new Word.Text(text ?? "")));
-            return new Word.TableCell(p);
-        }
-
-        private void ExportStats(string filename)
+        private SaveTable BuildTable()
         {
             var start = StartDatePicker.SelectedDate.Value;
             var end = EndDatePicker.SelectedDate.Value;
 
-            var eventTypes = _vm.Events
-                .Where(ev => ev.Date != null && ev.Date >= start && ev.Date <= end)
-                .Select(ev => ev.Type ?? "Без типа")
+            var types = _vm.Events
+                .Where(e => e.Date >= start && e.Date <= end)
+                .Select(e => e.Type ?? "Без типа")
                 .Distinct()
                 .OrderBy(t => t)
                 .ToList();
 
-            using (var doc = WordprocessingDocument.Create(filename, WordprocessingDocumentType.Document))
+            var table = new SaveTable
             {
-                var main = doc.AddMainDocumentPart();
+                Title = $"Статистика за период {start:dd.MM.yyyy} — {end:dd.MM.yyyy}"
+            };
 
-                var body = new Word.Body();
+            table.Columns.Add("Актёр");
+            foreach (var t in types)
+                table.Columns.Add(t);
 
-                // Заголовок
-                var titleRun = new Word.Run();
-                titleRun.Append(new Word.RunProperties(new Word.Bold()));
-                titleRun.Append(new Word.Text($"Статистика за период {start:dd.MM.yyyy} — {end:dd.MM.yyyy}"));
+            foreach (var actor in _vm.Actors)
+            {
+                var row = new System.Collections.Generic.List<string>();
+                row.Add(actor.Name);
 
-                var titleParagraph = new Word.Paragraph(titleRun);
-                body.Append(titleParagraph);
-
-                // Пустая строка
-                body.Append(new Word.Paragraph(new Word.Run(new Word.Text(string.Empty))));
-
-                // Если нет данных — выводим сообщение и выходим
-                if (_vm.Actors.Count == 0 || eventTypes.Count == 0)
+                foreach (var t in types)
                 {
-                    body.Append(new Word.Paragraph(new Word.Run(new Word.Text("Нет данных за указанный период."))));
-                    main.Document = new Word.Document(body);
-                    return;
+                    var parts = actor.Participations
+                        .Where(p => p.Event.Type == t && p.Event.Date >= start && p.Event.Date <= end)
+                        .ToList();
+
+                    var hours = parts.Sum(p => p.Hours);
+                    var participates = parts.Count(p =>
+                        p.Event.Type == "Спектакль" ||
+                        p.Event.Type == "Спектакль на выезде" ||
+                        p.Event.Type == "Спектакль на стационаре");
+
+                    row.Add($"{hours:N1} ч ({participates} уч.)");
                 }
 
-                // Таблица
-                var table = new Word.Table();
-
-                var borders = new Word.TableBorders(
-                    new Word.TopBorder { Val = Word.BorderValues.Single, Size = 4 },
-                    new Word.BottomBorder { Val = Word.BorderValues.Single, Size = 4 },
-                    new Word.LeftBorder { Val = Word.BorderValues.Single, Size = 4 },
-                    new Word.RightBorder { Val = Word.BorderValues.Single, Size = 4 },
-                    new Word.InsideHorizontalBorder { Val = Word.BorderValues.Single, Size = 4 },
-                    new Word.InsideVerticalBorder { Val = Word.BorderValues.Single, Size = 4 }
-                );
-
-                table.Append(new Word.TableProperties(borders));
-
-                // Заголовок таблицы
-                var header = new Word.TableRow();
-                header.Append(MakeCell("Актёр", true));
-                foreach (var type in eventTypes)
-                    header.Append(MakeCell(type, true));
-                table.Append(header);
-
-                // Строки по актёрам
-                foreach (var actor in _vm.Actors)
-                {
-                    var row = new Word.TableRow();
-                    row.Append(MakeCell(actor.Name));
-
-                    foreach (var type in eventTypes)
-                    {
-                        var parts = actor.Participations
-                            .Where(p => p.Event != null
-                                     && (p.Event.Type ?? "Без типа") == type
-                                     && p.Event.Date >= start
-                                     && p.Event.Date <= end)
-                            .ToList();
-
-                        double hours = parts.Sum(p => p.Hours);
-
-                        int participates = parts.Count(p =>
-                            p.Event.Type == "Спектакль" ||
-                            p.Event.Type == "Спектакль на выезде" ||
-                            p.Event.Type == "Спектакль на стационаре");
-
-                        string txt = $"{hours:N1} ч ({participates} уч.)";
-
-                        row.Append(MakeCell(txt));
-                    }
-
-                    table.Append(row);
-                }
-
-                body.Append(table);
-
-                main.Document = new Word.Document(body);
+                table.Rows.Add(row);
             }
+
+            return table;
         }
-
-
-        private Word.TableCell MakeCell(string text, bool bold = false)
-        {
-            var run = new Word.Run();
-
-            if (bold)
-                run.Append(new Word.RunProperties(new Word.Bold()));
-
-            run.Append(new Word.Text(text ?? string.Empty));
-
-            var paragraph = new Word.Paragraph(run);
-            return new Word.TableCell(paragraph);
-        }
-
     }
 }
